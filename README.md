@@ -4,10 +4,10 @@
 
 ### Launch
 
-1. Go to Terminal and navigate to any folder
-`cd ~`
+1. Go to Terminal and navigate to any folder.
+`cd ~` for example.
 2. Clone repository 
-`git clone <project name>`
+`git clone https://github.com/AndrewKozinsky/progress-component.git`
 3. Navigate to project folder
 `cd progress-component`
 4. Run `npm install` to install all necessary libraries
