@@ -1,0 +1,88 @@
+/* Component wrapper */
+.step-progress__wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 40px;
+}
+
+/* Circle */
+.step-progress__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    border: none;
+    border-radius: 50%;
+}
+.step-progress__circle--normal {
+    background-color: #5A5A5A;
+    cursor: pointer;
+}
+.step-progress__circle--normal:hover {
+    background-color: #3C3C3C;
+}
+
+.step-progress__circle--active {
+    cursor: pointer;
+    background-color: #5225DB;
+}
+.step-progress__circle--active:hover {
+    background-color: #23008E;
+}
+.step-progress__circle--active-disabled {
+    background-color: #5225DB;
+}
+.step-progress__circle--disabled {
+    background-color: #D8D8D8;
+}
+.step-progress__circle-inner {
+    display: flex;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Label */
+.step-progress__label {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    transform: translateY(-50px);
+}
+.step-progress__label--normal {
+    color: #5A5A5A;
+}
+.step-progress__label--active {
+    color: #5225DB;
+}
+.step-progress__label--disabled {
+    color: #D8D8D8;
+}
+.step-progress__circle--normal:hover .step-progress__label {
+    color: #3C3C3C;
+}
+.step-progress__circle--active:hover .step-progress__label {
+    color: #23008E;
+}
+
+/* Segment */
+.step-progress__segment {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #D8D8D8;
+    margin-bottom: 15px;
+}
+.step-progress__segment-fill {
+    width: 0;
+    height: 100%;
+    background-color: #5225DB;
+}
+.step-progress__segment-fill--filled {
+    width: 100%;
+}
+.step-progress__segment-fill--animate {
+    transition: width .18s;
+}
